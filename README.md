@@ -7,7 +7,7 @@ This is a simple API built with Node.js and Express to convert numbers between d
 1.  Clone this repository:
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/lucasdeeiroz/decimal_to_binary_converter.git
     ```
 2.  Navigate to the project directory:
 
