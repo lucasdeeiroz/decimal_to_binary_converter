@@ -9,3 +9,6 @@ Just run 'node index.js' and your server is running. It's really lightweight, so
 How to use it?
 
 It runs on localhost using the port 3000. So you just need to open your browser and type the URL 'http:localhost:3000/to-binary/<decimal_that_you_wanna_convert_to_binary>'. It will give you the binary in response.
+NEW FEATURE: now you can also convert decimal numbers to hexadecimal with the URL 'http:localhost:3000/to-hex/<decimal_that_you_wanna_convert_to_hex>'.
+
+Really easy!
