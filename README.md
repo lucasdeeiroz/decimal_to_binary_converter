@@ -2,6 +2,11 @@ Decimal-To-Binary Converter
 
 This is a simple code to convert decimal numbers to binary. It runs a Node.js server, so you can easily convert a decimal number through a browser.
 
+How to install?
+
+Clone this project, and then initiate npm with the 'npm init -y' command. You need Node.js installed to do this.
+Then, just run 'npm install express' to install the necessary modules.
+
 How to run?
 
 Just run 'node index.js' and your server is running. It's really lightweight, so you can leave it running.
