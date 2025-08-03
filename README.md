@@ -1,19 +1,105 @@
-Decimal-To-Binary Converter
+# Number System Converter API
 
-This is a simple code to convert decimal numbers to binary. It runs a Node.js server, so you can easily convert a decimal number through a browser.
+This is a simple API built with Node.js and Express to convert numbers between decimal, binary, hexadecimal, and octal formats.
 
-How to install?
+## Installation
 
-Clone this project, and then initiate npm with the 'npm init -y' command. You need Node.js installed to do this.
-Then, just run 'npm install express' to install the necessary modules.
+1.  Clone this repository:
 
-How to run?
+    ```bash
+    git clone <repository_url>
+    ```
+2.  Navigate to the project directory:
 
-Just run 'node index.js' and your server is running. It's really lightweight, so you can leave it running.
+    ```bash
+    cd tec_prog
+    ```
+3.  Initialize npm:
 
-How to use it?
+    ```bash
+    npm init -y
+    ```
+4.  Install the required dependencies:
 
-It runs on localhost using the port 3000. So you just need to open your browser and type the URL 'http:localhost:3000/to-binary/<decimal_that_you_wanna_convert_to_binary>'. It will give you the binary in response.
-NEW FEATURE: now you can also convert decimal numbers to hexadecimal with the URL 'http:localhost:3000/to-hex/<decimal_that_you_wanna_convert_to_hex>'.
+    ```bash
+    npm install express
+    ```
 
-Really easy!
+## Usage
+
+1.  Run the server:
+
+    ```bash
+    node index.js
+    ```
+
+    The server will start running on `localhost:3000`.
+
+## Endpoints
+
+*   **Convert Decimal to Binary:**
+
+    `GET /to-binary/:decimal`
+
+    Example: `http://localhost:3000/to-binary/10`
+*   **Convert Decimal to Hexadecimal:**
+
+    `GET /to-hex/:decimal`
+
+    Example: `http://localhost:3000/to-hex/255`
+*   **Convert Decimal to Octal:**
+
+    `GET /to-octal/:decimal`
+
+    Example: `http://localhost:3000/to-octal/8`
+*   **Convert Binary to Decimal:**
+
+    `GET /from-binary/:binary`
+
+    Example: `http://localhost:3000/from-binary/1010`
+
+## Examples
+
+*   Converting 10 (decimal) to binary:
+
+    `http://localhost:3000/to-binary/10` returns:
+
+    ```json
+    {
+    "decimal": 10,
+    "binary": "1010"
+    }
+    ```
+
+*   Converting 255 (decimal) to hexadecimal:
+
+    `http://localhost:3000/to-hex/255` returns:
+
+    ```json
+    {
+    "decimal": 255,
+    "hex": "FF"
+    }
+    ```
+
+*   Converting 8 (decimal) to octal:
+
+    `http://localhost:3000/to-octal/8` returns:
+
+    ```json
+    {
+    "decimal": 8,
+    "octal": "10"
+    }
+    ```
+
+*   Converting 1010 (binary) to decimal:
+
+    `http://localhost:3000/from-binary/1010` returns:
+
+    ```json
+    {
+    "binary": "1010",
+    "decimal": 10
+    }
+    ```
