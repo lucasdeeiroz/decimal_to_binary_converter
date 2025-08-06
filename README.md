@@ -9,11 +9,8 @@ This is a simple API built with Node.js and Express to convert numbers between d
     ```bash
     git clone https://github.com/lucasdeeiroz/decimal_to_binary_converter.git
     ```
-2.  Navigate to the project directory:
+2.  Navigate to the project directory;
 
-    ```bash
-    cd tec_prog
-    ```
 3.  Initialize npm:
 
     ```bash
